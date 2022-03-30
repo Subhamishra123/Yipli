@@ -1,0 +1,15 @@
+
+  <div class="row m-2 bg-teal" *ngFor="let profile of profiles">
+    <div class="col-md-4">
+      <img [src]="profile['display-img-url']" height="150" width="150" alt="">
+    </div>
+    <div class="col-md-3">
+      <h3 class="display-4">{{profile['display-name']}}</h3>
+      <p class="lead">{{profile['family-name']}}</p>
+    </div>
+    <div class="col-md-5">
+      <img [src]="data.body.template['display-icon-url']" height="150" width="150" alt="">
+      <h5>{{profile.count/1000}} K FP</h5>
+    </div>
+  </div>
+
